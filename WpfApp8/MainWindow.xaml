@@ -1,0 +1,27 @@
+﻿<Window x:Class="WpfApp8.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp8"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="35*"/>
+            <ColumnDefinition Width="97*"/>
+        </Grid.ColumnDefinitions>
+
+        <Border Height="70" Width="300" BorderBrush="Gray" BorderThickness="3" Grid.Column="0" Grid.ColumnSpan="2" Margin="4">
+            <StackPanel Background="LightGreen" Orientation="Horizontal"  Button.Click="CommonClickHandler">
+                <Button Name="YesButton" Margin="3" Width="45" ToolTip="This is the Yes Button with an added Image">
+                    <Image Source="Images/Button.png" Height="25"/>
+                </Button>
+                <Button Name="NoButton" Margin="3" Width="45" >No</Button>
+                <Button Name="CancelButton" Margin="3" Width="45" >Cancel</Button>
+            </StackPanel>
+        </Border>
+
+    </Grid>
+</Window>
